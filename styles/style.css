@@ -1,4 +1,52 @@
 
+* {
+    /* CSS HEX */
+--buff: #f3de8aff;
+--vivid-tangerine: #eb9486ff;
+--denim: #2e5eaaff;
+--cultured: #f9f8f8ff;
+--zomp: #2ca58dff;
+
+/* CSS HSL */
+--buff: hsla(48, 81%, 75%, 1);
+--vivid-tangerine: hsla(8, 72%, 72%, 1);
+--denim: hsla(217, 57%, 42%, 1);
+--cultured: hsla(0, 8%, 97%, 1);
+--zomp: hsla(168, 58%, 41%, 1);
+
+/* SCSS HEX */
+$buff: #f3de8aff;
+$vivid-tangerine: #eb9486ff;
+$denim: #2e5eaaff;
+$cultured: #f9f8f8ff;
+$zomp: #2ca58dff;
+
+/* SCSS HSL */
+$buff: hsla(48, 81%, 75%, 1);
+$vivid-tangerine: hsla(8, 72%, 72%, 1);
+$denim: hsla(217, 57%, 42%, 1);
+$cultured: hsla(0, 8%, 97%, 1);
+$zomp: hsla(168, 58%, 41%, 1);
+
+/* SCSS RGB */
+$buff: rgba(243, 222, 138, 1);
+$vivid-tangerine: rgba(235, 148, 134, 1);
+$denim: rgba(46, 94, 170, 1);
+$cultured: rgba(249, 248, 248, 1);
+$zomp: rgba(44, 165, 141, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #f3de8aff, #eb9486ff, #2e5eaaff, #f9f8f8ff, #2ca58dff);
+$gradient-right: linear-gradient(90deg, #f3de8aff, #eb9486ff, #2e5eaaff, #f9f8f8ff, #2ca58dff);
+$gradient-bottom: linear-gradient(180deg, #f3de8aff, #eb9486ff, #2e5eaaff, #f9f8f8ff, #2ca58dff);
+$gradient-left: linear-gradient(270deg, #f3de8aff, #eb9486ff, #2e5eaaff, #f9f8f8ff, #2ca58dff);
+$gradient-top-right: linear-gradient(45deg, #f3de8aff, #eb9486ff, #2e5eaaff, #f9f8f8ff, #2ca58dff);
+$gradient-bottom-right: linear-gradient(135deg, #f3de8aff, #eb9486ff, #2e5eaaff, #f9f8f8ff, #2ca58dff);
+$gradient-top-left: linear-gradient(225deg, #f3de8aff, #eb9486ff, #2e5eaaff, #f9f8f8ff, #2ca58dff);
+$gradient-bottom-left: linear-gradient(315deg, #f3de8aff, #eb9486ff, #2e5eaaff, #f9f8f8ff, #2ca58dff);
+$gradient-radial: radial-gradient(#f3de8aff, #eb9486ff, #2e5eaaff, #f9f8f8ff, #2ca58dff);
+}
+
 body {
     --color1: #ffffff;
     --color2: #ffffff;
@@ -48,7 +96,7 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 2px var(--vivid-tangerine);
 }
 
 header {
@@ -91,7 +139,11 @@ header img {
     height: var(--header-height);
 }
 
+img {
+    border-radius: 15px;
+    border: solid 4px var(--denim);
 
+}
 
 content {
     width: 80%;
