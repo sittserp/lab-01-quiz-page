@@ -17,15 +17,22 @@ button.addEventListener('click', () => {
             return;
         }
     const userName = prompt('What is your name?');
+
     const habitat = prompt(`Hi, ${userName}!  Does the coconut octopus live in the Pacific Ocean?`);
         if (countAsYes(habitat)) {tally++};
+
     const movement = prompt('Does the coconut octopus walk on two legs in the water?');
         if (countAsYes(movement)) {tally++};
+
     const tree = prompt('Does the coconut octopus live in coconut trees?');
         if (!countAsYes(tree)) {tally++}
+
     const food = prompt(`Okay, ${userName}, last one: Does the coconut octopus eat shrimp?`);
         if (countAsYes(food)) {tally++};
+
+    alert('Well done!  Check your score at the bottom of the page!')
+
     score.textContent = `Congratulations, ${userName}! You got ${tally} out of 4 correct!`;
-    score.scrollTop = score.scrollHeight;
+
 });
 
