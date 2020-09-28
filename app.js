@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { countAsYes } from '../count-as-yes.js';
+import { countAsYes } from './count-as-yes.js';
 
 const button = document.getElementById('button');
 const score = document.getElementById('score');
