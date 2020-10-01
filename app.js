@@ -50,5 +50,6 @@ button.addEventListener('click', () => {
 
     tally = 0;
 
+    
 });
 
