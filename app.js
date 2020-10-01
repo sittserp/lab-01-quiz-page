@@ -37,6 +37,8 @@ button.addEventListener('click', () => {
     if (tally === 0) {score.textContent = `Sorry, ${userName}, you got ${tally}% correct. Try again!`;}
 
     if (tally === 25) {score.textContent = `Oooooo... sorry, ${userName}, you only got ${tally}% correct.  Try again!`;}
+    
+    if (tally === 50) {score.textContent = `Oops, ${userName}, you only got ${tally}% correct.  Try again!`;}
 
     if (tally === 75) {score.textContent = `Not bad, ${userName}!  You scored ${tally}%.  Try again to get them all right!`;}
 
